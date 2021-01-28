@@ -8,6 +8,9 @@ Medium         :  >= 768px   -> m
 Large          :  >= 992px   -> l
 Extra Large    :  >= 1200px  -> xl
 
+=========================================================================================
+=========================================================================================
+
 Dado que Bootstrap está desarrollado para ser móvil primero, utilizamos
 un puñado de media queries para crear puntos de interrupción (breakpoints) 
 sensibles para nuestros diseños e interfaces. Estos breakpoints se basan 
@@ -33,8 +36,8 @@ de cuadrícula y componentes.
 // Dispositivos extra grandes (escritorios grandes, 1200px y más)
 @media (min-width: 1200px) { ... }
 
-======================================================================
-======================================================================
+=========================================================================================
+=========================================================================================
 También hay consultas de medios y mixins para apuntar a un solo
 segmento de tamaños de pantalla utilizando los anchos de punto 
 de interrupción mínimo y máximo.

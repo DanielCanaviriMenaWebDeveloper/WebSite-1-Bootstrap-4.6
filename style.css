@@ -5,10 +5,24 @@ body {
     sans-serif;
 }
 
+section {
+    padding: 100px 0;
+}
+
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 80px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 p {
@@ -16,6 +30,11 @@ p {
     color: #999999;
     line-height: 1.8;
     margin-bottom: 0;
+}
+
+a.text-dark {
+    color: #000;
+    font-size: 12px;
 }
 
 .top-margin-xs {margin-top: 15px; }
@@ -28,6 +47,7 @@ p {
     min-width: 160px;
     border-radius: 2px;
     display: inline-block;
+    margin-top: 40px;
 }
 
 .btn-light {
@@ -37,13 +57,14 @@ p {
 }
 /* navbar */
 
+
+
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
-    min-height: 100px;
 }
 
-ion-icon {
+ion-icon.play {
     font-size: 20px;
     margin-left: 8px;
     margin-bottom: -6px;
@@ -69,6 +90,7 @@ ion-icon {
     background-size: cover;
     min-height: 100vh;
     padding-top: 90px;
+    margin-top: 83.15px;
     color: #fff;  
 }
 
@@ -80,6 +102,45 @@ ion-icon {
 
 #hero p { color: #fff; }
 
+section#portafolio {
+    padding-bottom: 40px;
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 20;
+}
+
+.portfolio-details a h2, 
+.portfolio-details a p {
+    color: white;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
 
 /* Dispositivos extra pequeños (teléfonos verticales, menos de 576 px) */
 @media (max-width: 575.98px) {
@@ -88,8 +149,31 @@ ion-icon {
         line-height: normal;
     }
 
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
     .top-margin-lg {
         margin-top: 0px !important
     }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section#hero {
+        min-height: calc(100vh - 163.15px);
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #hero .container .content-center {
+        margin-bottom: 0px;
+    }
+
 }
 
